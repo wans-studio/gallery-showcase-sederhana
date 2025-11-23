@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/pp1.jpg">
+    <title>gallery showcase sederhana - by JiwanDev</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="gallery-showcase">
+        <div class="container">
+            <h1 class="gallery-title">Gallery Showcase</h1>
+            <p class="gallery-subtitle">Klik gambar untuk melihat preview</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-index="0">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop" alt="Mountain Landscape" loading="lazy">
+                </div>
+                <div class="gallery-item" data-index="1">
+                    <img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?w=800&h=600&fit=crop" alt="Ocean View" loading="lazy">
+                </div>
+                <div class="gallery-item" data-index="2">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=600&fit=crop" alt="Forest Path" loading="lazy">
+                </div>
+                <div class="gallery-item" data-index="3">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop" alt="Desert Sunset" loading="lazy">
+                </div>
+                <div class="gallery-item" data-index="4">
+                    <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800&h=600&fit=crop" alt="Lake Reflection" loading="lazy">
+                </div>
+                <div class="gallery-item" data-index="5">
+                    <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800&h=600&fit=crop" alt="Valley View" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Preview">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <div class="watermark">by JiwanDev</div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
